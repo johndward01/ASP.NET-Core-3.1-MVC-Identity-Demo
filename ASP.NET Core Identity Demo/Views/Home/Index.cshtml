@@ -1,0 +1,54 @@
+﻿@model AppUser
+
+<section class="mucho-margin-top">
+    <div class="m-4">
+        <h1 class="text-white-50 text-center m-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada accumsan felis non cursus. Quisque.</h1>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <a asp-controller="Admin" asp-action="Index">
+                <div class="card text-blue bg-dark">
+                    <img class="card-img-top" src="~/imgs/group-users.png" />
+                    <div class="card-body">
+                        <h1 class="card-title text-white text-center">Users</h1>
+                        <p class="card-text">
+                            Allows you to see all of the users stored in the IdentityDB
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a asp-controller="Claims" asp-action="Index">
+                <div class="card text-blue bg-dark">
+                    <img class="card-img-top" src="~/imgs/claims.png" />
+                    <div class="card-body">
+                        <h1 class="card-title text-white text-center">Claims</h1>
+                        <p class="card-text">
+                            Allows you to see all of the claims associated with a particular user
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a asp-controller="Role" asp-action="Index">
+                <div class="card text-blue bg-dark">
+                    <img class="card-img-top" src="~/imgs/roles.png" />
+                    <div class="card-body">
+                        <h1 class="card-title text-white text-center">Roles</h1>
+                        <p class="card-text">
+                            Allows you to see all of the roles assigned to each user
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,66 @@
+﻿
+html, body {
+    /*Margin bottom by footer height */
+    background-color: rgb(24, 26, 27);
+    margin: 10px, 20px, 60px, 20px;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /*Vertically center the text there */
+}
+
+.border-light {
+    border-color: rgb(50, 54, 56) !important;
+}
+
+.dark-nav {
+    background-color: rgb(24, 26, 27);
+    color: #404040;
+}
+
+.form-control {
+    color: rgb(181, 175, 166);
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(60, 65, 68);
+}
+
+.login {
+    margin: 100px 15px 0px 15px;
+}
+
+.mucho-margin-top {
+    margin-top: 110px;
+}
+
+.fullscreen-display {
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 60px;
+}
+
+canvas {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.custom-class {
+    background-color: blue;
+}
+
+.center {
+    text-align: center;
+}

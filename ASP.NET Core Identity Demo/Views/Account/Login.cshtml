@@ -1,0 +1,45 @@
+﻿@model Login
+
+<div class="container fullscreen-display mucho-margin-top">
+    <div class="row">
+        <div class="col-6">
+            <div class="text-white-50 login border border-light p-3">
+                <h1 class="display-4 text-center">Login</h1>
+                <div class="text-danger" asp-validation-summary="All"></div>
+                <form asp-action="Login" method="post">
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" />
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-primary mx-2" type="submit">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="text-white-50 login border border-light p-3">
+                <h1 class="display-4 text-center">Register</h1>
+                <p>Create an account here!</p>
+                <p>For development purposes, access to the Admin/Create page is unrestricted.</p>
+                <p>
+                    Add the <span style="color: aquamarine;">[Authorize]</span>
+                    attribute to the Action method in the controller, in order to close off for Non-Authenticated users!
+                </p>
+                <hr />
+                <a class="btn btn-outline-success mx-2" href="~/Admin/Create">Register</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+</div>
+
+
+
