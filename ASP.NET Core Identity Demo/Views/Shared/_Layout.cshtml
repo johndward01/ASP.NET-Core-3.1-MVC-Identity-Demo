@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]ASP.NET Core MVC Identity Demo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/custom.css" />
     <link rel="stylesheet" href="~/css/main.css" />
     <script src="https://kit.fontawesome.com/7160ed62e4.js" crossorigin="anonymous"></script>
@@ -39,7 +38,7 @@
                             <a class="nav-link" asp-area="" title="KanyeREST API Demo" asp-controller="APIDemo" asp-action="Index"><i class="fa-solid fa-face-smile-wink"></i> KanyeREST API Demo</a>
                         </li>
                         <li class="nav-item m-2">
-                            <a class="nav-link" asp-area="" asp-controller="OpenWeatherMap" asp-action="Index"><i class="fas fa-cloud-sun-rain"></i> Open Weather Map Demo</a>
+                            <a class="nav-link" asp-area="" asp-controller="OpenWeatherMap" asp-action="Index"><i class="fas fa-cloud-sun-rain"></i>Weather API</a>
                         </li>
                         <li class="nav-item m-2">
                             <a class="nav-link" asp-area="" title="Youtube Video Embed Demo" asp-controller="YoutubeEmbedDemo" asp-action="Index"><i class="fa-brands fa-youtube"></i> Embedding a Video</a>
@@ -47,7 +46,7 @@
                         <li class="nav-item m-2">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   <i class="fa-brands fa-js"></i> JavaScript Demos
+                                    <i class="fa-brands fa-js"></i> JavaScript Demos
                                 </button>
                                 <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
                                     <a class="dropdown-item text-success" asp-area="" asp-controller="CodePens" asp-action="PointerLock">Three.js PointerLock Demo</a>
@@ -66,17 +65,14 @@
         @RenderBody()
     </main>
 
-    <footer class="text-center text-white" style="background-color: rgb(24, 26, 27);">
-        <div>
-            &copy; 2022 - ASP.NET_Core_Identity_Demo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="text-center text-white">
+        <div class="d-flex justify-content-center">
+            <p>&copy; 2022 - ASP.NET_Core_Identity_Demo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+            <div id="collapse-btn" class="btn btn-outline-info">Collapse</div>
         </div>
     </footer>
 
-    @*<footer class="footer">
-        <div class="container">
-        &copy; 2020 - ASP.NET_Teacher_Demo_ConsoleUI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-        </footer>*@
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

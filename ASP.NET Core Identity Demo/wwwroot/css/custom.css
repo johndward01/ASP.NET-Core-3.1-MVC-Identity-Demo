@@ -14,13 +14,7 @@ th {
     z-index: 2;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /*Vertically center the text there */
-}
+
 
 .border-light {
     border-color: rgb(50, 54, 56) !important;
