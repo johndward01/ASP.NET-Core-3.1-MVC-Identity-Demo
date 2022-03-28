@@ -11,6 +11,5 @@ namespace ASP.NET_Core_Identity_Demo.Models.API_Demo
         public string Updated_at { get; set; }
         public string Url { get; set; }
         public string Value { get; set; }
-
     }
 }

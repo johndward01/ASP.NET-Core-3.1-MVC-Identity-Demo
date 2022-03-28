@@ -10,8 +10,8 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
     {
         public IActionResult Index()
         {
-            ChuckNorris_Response chuck;
             var client = new HttpClient();
+            ChuckNorris_Response chuck;
             var kanye = new Kanye_Response();
             var ron = new Ron_Response();
             var viewModel = new Ron_Kanye_And_Chuck_ViewModel();
@@ -32,6 +32,8 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             viewModel.Chuck = chuck;
             viewModel.Kanye = kanye;
             viewModel.Ron = ron;
+
+           
 
             return View(viewModel);
         }
