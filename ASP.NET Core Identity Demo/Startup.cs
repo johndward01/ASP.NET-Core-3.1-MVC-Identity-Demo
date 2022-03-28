@@ -70,32 +70,32 @@ namespace ASP.NET_Core_Identity_Demo
                 options.SlidingExpiration = true;
             });
 
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("AspManager", policy =>
-                {
-                    policy.RequireRole("Manager");
-                    policy.RequireClaim("Coding-Skill", "ASP.NET Core MVC");
-                });
-            });
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("AspManager", policy =>
+            //    {
+            //        policy.RequireRole("Manager");
+            //        policy.RequireClaim("Coding-Skill", "ASP.NET Core MVC");
+            //    });
+            //});
 
-            services.AddTransient<IAuthorizationHandler, AllowUsersHandler>();
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("AllowTom", policy =>
-                {
-                    policy.AddRequirements(new AllowUserPolicy("tom"));
-                });
-            });
+            //services.AddTransient<IAuthorizationHandler, AllowUsersHandler>();
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("AllowTom", policy =>
+            //    {
+            //        policy.AddRequirements(new AllowUserPolicy("tom"));
+            //    });
+            //});
 
-            services.AddTransient<IAuthorizationHandler, AllowPrivateHandler>();
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("PrivateAccess", policy =>
-                {
-                    policy.AddRequirements(new AllowPrivatePolicy());
-                });
-            });
+            //services.AddTransient<IAuthorizationHandler, AllowPrivateHandler>();
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("PrivateAccess", policy =>
+            //    {
+            //        policy.AddRequirements(new AllowPrivatePolicy());
+            //    });
+            //});
 
             #region Google Login Option
             //services.AddAuthentication()
