@@ -31,9 +31,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
 
             viewModel.Chuck = chuck;
             viewModel.Kanye = kanye;
-            viewModel.Ron = ron;
-
-           
+            viewModel.Ron = ron;           
 
             return View(viewModel);
         }

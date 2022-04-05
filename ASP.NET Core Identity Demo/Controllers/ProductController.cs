@@ -17,7 +17,16 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
         public ProductController(IProductRepository repo)
         {
             _repo = repo;
-        }        
+        }
+
+        //[Route("Product/Test/{name?}")]
+        //public IActionResult Test(string name)
+        //{
+        //    var p = new Product();
+        //    p.Name = name;
+
+        //    return View(p);
+        //}
 
         public IActionResult Index(string sortOrder, string searchString)
         {
@@ -68,8 +77,6 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
         public IActionResult UpdateProduct(int id)
         {
             Product prod = _repo.GetProduct(id);
-
-            _repo.UpdateProduct(prod);
 
             if (prod == null)
             {
