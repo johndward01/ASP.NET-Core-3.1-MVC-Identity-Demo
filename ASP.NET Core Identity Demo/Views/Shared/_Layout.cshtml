@@ -18,8 +18,7 @@
                     data-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <span>
@@ -28,7 +27,7 @@
                     <a class="btn btn-outline-danger mx-2" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
                 }
             </span>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse justify-content-center">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item m-2">
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a>
@@ -38,7 +37,7 @@
                     </li>
                     <li class="nav-item m-2">
                         <a class="nav-link" asp-area="" title="File Upload" asp-controller="FileUpload" asp-action="Index"><i class="fa-solid fa-upload"></i> File Upload Demo</a>
-                    </li>                    
+                    </li>
                     <li class="nav-item m-2">
                         <a class="nav-link" asp-area="" title="Youtube Video Embed Demo" asp-controller="YoutubeEmbedDemo" asp-action="Index"><i class="fa-brands fa-youtube"></i> Embedding a Video</a>
                     </li>
@@ -48,8 +47,8 @@
                                 <i class="fa-solid fa-code"></i>&emsp;API Demos
                             </button>
                             <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu1">
-                               <a class="nav-link" asp-area="" asp-controller="OpenWeatherMap" asp-action="Index"><i class="fas fa-cloud-sun-rain"></i> Weather API</a>
-                               <a class="nav-link" asp-area="" title="KanyeREST API Demo" asp-controller="APIDemo" asp-action="Index"><i class="fa-solid fa-face-smile-wink"></i> KanyeREST API Demo</a>
+                                <a class="nav-link" asp-area="" asp-controller="OpenWeatherMap" asp-action="Index"><i class="fas fa-cloud-sun-rain"></i> Weather API</a>
+                                <a class="nav-link" asp-area="" title="KanyeREST API Demo" asp-controller="APIDemo" asp-action="Index"><i class="fa-solid fa-face-smile-wink"></i> KanyeREST API Demo</a>
                             </div>
                         </div>
                     </li>
@@ -74,12 +73,22 @@
         @RenderBody()
     </main>
 
-    <footer class="text-center text-white">
-        <div class="d-flex justify-content-center">
-            <p>&copy; 2022 - ASP.NET_Core_Identity_Demo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
-            @*<div id="collapse-btn" class="btn btn-outline-info">Collapse</div>*@
+    <footer id="footer" class="text-center text-white">
+        <div class="d-flex">
+            <p class="m-2 pl-2">&copy; 2022 - ASP.NET_Core_Identity_Demo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+            <i onclick="HideFooter()" style="cursor: pointer;" class="fa-solid fa-x ml-auto pr-1 m-2"></i>
         </div>
     </footer>
+
+    <script>
+            function HideFooter(){
+                const display = document.getElementById("footer").style.display;
+                if(display=="none")
+                    document.getElementById("footer").style.display="block";
+                else
+                    document.getElementById("footer").style.display="none";
+            }
+    </script>
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

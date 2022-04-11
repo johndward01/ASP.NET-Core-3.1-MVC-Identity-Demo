@@ -97,7 +97,6 @@ namespace ASP.NET_Core_Identity_Demo
             //    });
             //});
 
-            #region Google Login Option
             //services.AddAuthentication()
             //    .AddGoogle(opts =>
             //    {
@@ -105,7 +104,6 @@ namespace ASP.NET_Core_Identity_Demo
             //        opts.ClientSecret = ""; // Empty
             //        opts.SignInScheme = IdentityConstants.ExternalScheme;
             //    });
-            #endregion
 
             services.AddControllersWithViews();
         }
