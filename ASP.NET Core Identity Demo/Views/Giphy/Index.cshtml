@@ -3,14 +3,11 @@
 @model GiphyAPI_Root
 
 <style>
- 
-
     .grid-container {
-        display: grid;
+        display: inline-grid;
         grid-template-columns: auto auto;
         background-color: #2196F3;
         padding: 10px;
-        width: 100%;
     }
 
     .grid-item {
@@ -23,18 +20,15 @@
 </style>
 
 <div class="mucho-margin-top">
-
     <h1 class="display-4 center">Giphy API Demo: Cat memes</h1>
-
-        <div class="grid-container">
-            @foreach (var item in Model.data)
-            {
-                <div class="grid-item">
-                    <img src="@item.Images.original.url" />
-                </div>
-            }
-        </div>
+    <div class="grid-container">
+        @foreach (var item in Model.data)
+        {
+            <div class="grid-item">
+                <img src="@item.Images.fixed_height.url" />
+            </div>
+        }
+    </div>
     <br />
-
 </div>
 
