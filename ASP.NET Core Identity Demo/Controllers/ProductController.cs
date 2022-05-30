@@ -119,5 +119,13 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
         }
 
 
+        public IActionResult JeremysMethod()
+        {
+            var p = new Product();
+            p.Name = "Jeremys Product";
+            p.Price = 100.00;
+            return View(p);
+        }
+
     }
 }

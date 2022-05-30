@@ -17,7 +17,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
         public IActionResult GetWeather(Root rootWeather)
         {               
             var client = new HttpClient();
-            var forecast = $"http://api.openweathermap.org/data/2.5/forecast?q={rootWeather.City.Name}&appid={rootWeather.API_Key}&units=imperial";
+            var forecast = $"http://api.openweathermap.org/data/2.5/forecast?q={rootWeather.City.Name}&apid={rootWeather.API_Key}&units=imperial";
             var response = client.GetStringAsync(forecast).Result;
             rootWeather = JsonConvert.DeserializeObject<Root>(response);
 

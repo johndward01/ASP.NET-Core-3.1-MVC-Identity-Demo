@@ -1,0 +1,23 @@
+﻿@using ASP.NET_Core_Identity_Demo.GiphyAPI
+
+@model GiphyAPI_Root
+
+<div class="mucho-margin-top">
+
+    <div>
+        <h1 class="display-4 center">GIFS</h1>
+        @foreach (var item in Model.data)
+        {
+            <div style="margin: 10px; text-align: center;">
+                <img src="@item.Images.original.url" />
+            </div>            
+        }
+    </div>
+
+    <div>
+        <h1>@Model.meta.status</h1>
+        <h1>@Model.pagination.count</h1>
+    </div>
+
+</div>
+

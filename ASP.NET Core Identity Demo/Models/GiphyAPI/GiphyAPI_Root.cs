@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using ASP.NET_Core_Identity_Demo.Models.GiphyAPI;
+using System.Collections.Generic;
 
 namespace ASP.NET_Core_Identity_Demo.GiphyAPI
 {
-    public class Root
+    public class GiphyAPI_Root
     {
         public List<DataItem> data { get; set; }
         public Pagination pagination { get; set; }
