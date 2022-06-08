@@ -24,6 +24,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             userValidator = userValid;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             return View(userManager.Users);
