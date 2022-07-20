@@ -65,7 +65,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             return View(products);
         }
 
-        [Authorize]
+        //[Authorize]
         public IActionResult ViewProduct(int id)
         {
             var product = _repo.GetProduct(id);
@@ -73,7 +73,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             return View(product);
         }
 
-        [Authorize]
+        //[Authorize]
         public IActionResult UpdateProduct(int id)
         {
             Product prod = _repo.GetProduct(id);
@@ -86,7 +86,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             return View(prod);
         }
 
-        [Authorize]
+        //[Authorize]
         public IActionResult UpdateProductToDatabase(Product product)
         {
             _repo.UpdateProduct(product);
@@ -94,7 +94,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             return RedirectToAction("ViewProduct", new { id = product.ProductID });
         }
 
-        [Authorize]
+        //[Authorize]
         public IActionResult InsertProduct()
         {
             var prod = _repo.AssignCategory();
@@ -102,7 +102,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             return View(prod);
         }
 
-        [Authorize]
+        //[Authorize]
         public IActionResult InsertProductToDatabase(Product productToInsert)
         {
             _repo.InsertProduct(productToInsert);
@@ -110,7 +110,7 @@ namespace ASP.NET_Core_Identity_Demo.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize]
+        //[Authorize]
         public IActionResult DeleteProduct(Product product)
         {
             _repo.DeleteProduct(product);
