@@ -1,4 +1,4 @@
-﻿using ASP.NET_Core_Identity_Demo.Models;
+﻿using ASP.NET_Core_Identity_Demo.Models.Weather;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using Newtonsoft.Json;

@@ -1,4 +1,4 @@
-﻿namespace ASP.NET_Core_Identity_Demo.Models
+﻿namespace ASP.NET_Core_Identity_Demo.Models.Weather
 {
     public class Main
     {

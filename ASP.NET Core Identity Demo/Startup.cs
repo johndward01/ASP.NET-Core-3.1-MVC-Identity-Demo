@@ -69,42 +69,6 @@ namespace ASP.NET_Core_Identity_Demo
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
                 options.SlidingExpiration = true;
             });
-
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("AspManager", policy =>
-            //    {
-            //        policy.RequireRole("Manager");
-            //        policy.RequireClaim("Coding-Skill", "ASP.NET Core MVC");
-            //    });
-            //});
-
-            //services.AddTransient<IAuthorizationHandler, AllowUsersHandler>();
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("AllowTom", policy =>
-            //    {
-            //        policy.AddRequirements(new AllowUserPolicy("tom"));
-            //    });
-            //});
-
-            //services.AddTransient<IAuthorizationHandler, AllowPrivateHandler>();
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("PrivateAccess", policy =>
-            //    {
-            //        policy.AddRequirements(new AllowPrivatePolicy());
-            //    });
-            //});
-
-            //services.AddAuthentication()
-            //    .AddGoogle(opts =>
-            //    {
-            //        opts.ClientId = ""; // Empty
-            //        opts.ClientSecret = ""; // Empty
-            //        opts.SignInScheme = IdentityConstants.ExternalScheme;
-            //    });
-
             services.AddControllersWithViews();
         }
 
@@ -122,15 +86,6 @@ namespace ASP.NET_Core_Identity_Demo
                 app.UseHsts();
             }
 
-            app.Use(async (context, next) =>
-            {
-                await next();
-                if (context.Response.StatusCode == 404)
-                {
-                    context.Request.Path = "/Home/Error";
-                    await next();
-                }
-            });
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

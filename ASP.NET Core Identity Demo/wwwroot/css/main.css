@@ -62,9 +62,7 @@ html, body {
 }
 
 footer {
-    background-color: rgb(24, 26, 27);
-    opacity: .95;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     white-space: nowrap;

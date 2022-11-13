@@ -5,8 +5,6 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET_Core_Identity_Demo", "ASP.NET Core Identity Demo\ASP.NET_Core_Identity_Demo.csproj", "{BCEDFE9A-AC93-4028-9720-7BDDD49F63DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET_Core_Identity_Demo.Tests", "ASP.NET_Core_Identity_Demo.Tests\ASP.NET_Core_Identity_Demo.Tests.csproj", "{718AF20D-4206-482B-9441-1E84B8CEAD6E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{BCEDFE9A-AC93-4028-9720-7BDDD49F63DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCEDFE9A-AC93-4028-9720-7BDDD49F63DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCEDFE9A-AC93-4028-9720-7BDDD49F63DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{718AF20D-4206-482B-9441-1E84B8CEAD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{718AF20D-4206-482B-9441-1E84B8CEAD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{718AF20D-4206-482B-9441-1E84B8CEAD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{718AF20D-4206-482B-9441-1E84B8CEAD6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
