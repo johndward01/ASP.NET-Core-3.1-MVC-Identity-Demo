@@ -70,26 +70,10 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="pb-2">
+    <main role="main">
         @RenderBody()
     </main>
 
-    <footer id="footer" class="text-center text-white">
-        <div class="d-flex">
-            <p class="m-2 pl-2">&copy; 2022 - ASP.NET_Core_Identity_Demo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
-            <i onclick="HideFooter()" style="cursor: pointer;" class="fa-solid fa-x ml-auto pr-1 m-2"></i>
-        </div>
-    </footer>
-
-    <script>
-            function HideFooter(){
-                const display = document.getElementById("footer").style.display;
-                if(display=="none")
-                    document.getElementById("footer").style.display="block";
-                else
-                    document.getElementById("footer").style.display="none";
-            }
-    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/main.js"></script>
